@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --cor-de-fundo: #dba96f;
+    --cor-de-fundo-footer: #868686;
+    --cor-botao: #444444;
+    --cor-texto-botao: #ffffff;
+    --cor-botao-click: #83b87c;
+    --cor-de-fundo-formulario:  rgb(156, 218, 218);
+    --cor-de-fundo-postagens: #d6d3b2;
+    --cor-texto-postagens: #000000;
+}
+
+body{
+    margin: 0;
+    background-color: var(--cor-de-fundo);
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    overflow: hidden;
+}
+
+#cabecalho-rede-social{
+   margin: 2% 0 2% 0;
+}
+
+#cabecalho-rede-social h1{
+    font-size: 40px;
+}
+
+#registro-postagens{
+    background-color: var(--cor-de-fundo-postagens);
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: justify;
+    border: solid 5px rgb(242, 247, 200);
+    overflow: hidden scroll;
+    padding: 30px;
+    color: var(--cor-texto-postagens);
+}
+
+#formulario{
+background-color: var(--cor-de-fundo-formulario);
+width: 600px;
+border: solid white;
+align-items: center;
+margin: auto;
+margin-bottom: 10px
+}
+
+#formulario #titulo-postagem, #texto-postagem{
+    width: 494px;
+    margin: 5px 10px 10px 10px;
+    caret-color: black;
+    padding: 10px;
+    font-size: 16px;
+    font-family: cursive;
+}
+
+#formulario #texto-postagem{
+    height: 100px;
+    
+}
+
+#formulario h3{
+    text-align: justify;
+    margin-left: 50px;
+    font-size: 15px;
+}
+
+#formulario #botao-enviar{
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    border: solid 2px;
+    transition: ease-in-out 0.3s;
+    background-color: var(--cor-botao);
+    color: var(--cor-texto-botao);
+}
+
+#formulario #botao-enviar:hover{
+    width: 65px;
+    height: 35px;
+   
+}
+
+#formulario #botao-enviar:active{
+    background-color: var(--cor-botao-click);
+    transition: background-color 0s;
+}
+
